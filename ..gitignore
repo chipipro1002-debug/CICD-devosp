@@ -1,0 +1,17 @@
+# Bỏ qua file nhạy cảm và secret
+.env
+*.env
+*.pem
+*.key
+id_rsa
+
+# File build nhị phân và thư mục tạm
+/bin/
+/dist/
+*.exe
+*.test
+__debug_bin*
+
+# OS rác
+.DS_Store
+Thumbs.db
