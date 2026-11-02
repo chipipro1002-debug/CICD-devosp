@@ -22,7 +22,7 @@ func rootHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("X-Frame-Options", "DENY")
 	w.Header().Set("Strict-Transport-Security", "max-age=31536000; includeSubDomains")
 	w.WriteHeader(http.StatusOK)
-	_, _ = fmt.Fprintf(w, "Zero-Trust DevSecOps Service is LIVE & SECURE!")
+	_, _ = fmt.Fprintf(w, "Zero-Trust DevSecOps Service is LIVE and SECURE!")
 }
 
 func main() {
@@ -45,8 +45,8 @@ func main() {
 		IdleTimeout:       30 * time.Second,
 	}
 
-	log.Printf("Server đang chạy tại cổng :%d...", port)
+	log.Printf("Server dang chay tai cong :%d...", port)
 	if err := server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-		log.Fatalf("Server gặp lỗi: %v", err)
+		log.Fatalf("Server gap loi: %v", err)
 	}
 }
